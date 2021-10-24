@@ -2,18 +2,6 @@
   padding: 30px 5px;
 }
 
-.main_header {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 1rem;
-}
-
-.main_header > .icon {
-  object-fit: contain;
-  height: 17px;
-  color: #ffffff;
-}
-
 .main_body {
   display: flex;
   justify-content: center;
