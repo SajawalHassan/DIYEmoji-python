@@ -2,14 +2,46 @@
   padding: 30px 5px;
 }
 
-.main_body {
+.main__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__headerLeft {
+  margin-left: 10px;
+  color: gray;
+  border: 5px solid white;
+  width: max-content;
+}
+
+.main__header > .main__headerLeft > h1 {
+  padding: 5px;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.main__header > .main__headerRight > button {
+  font-size: 14px;
+  background-color: rgb(78, 182, 201);
+  border-radius: 10px;
+  padding: 7px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.main__header > .main__headerRight > button:hover {
+  background-color: rgb(34, 139, 158);
+}
+
+.main__body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 87vh;
 }
 
-.main_body > img {
+.main__body > img {
   object-fit: contain;
   border-radius: 999px;
   height: 130px;
