@@ -12,7 +12,7 @@
   bottom: 0;
 }
 
-.bottom__icon {
+.bottom__centerIcon {
   object-fit: contain;
   height: 30px;
   color: #808080;
@@ -23,12 +23,19 @@
   cursor: pointer;
 }
 
-.bottom__icon:hover {
+.bottom__centerIcon:hover {
   background-color: var(--icon-bg-hover);
   transition: background-color 500ms ease-out;
 }
 
-.bottom__icon:active {
+.bottom__centerIcon:active {
   background-color: var(--icon-bg-active);
   transition: 300ms;
+}
+
+.bottom__date {
+  position: absolute;
+  bottom: 2%;
+  margin-left: 10px;
+  font-size: 15px;
 }
