@@ -6,12 +6,13 @@ import { CameraIcon, ClipboardIcon, UploadIcon } from "@heroicons/react/solid";
 function Bottom() {
   let day = new Date().getDate();
   let month = new Date().getMonth();
+  let year = new Date().getFullYear();
 
   return (
     <div className="bottom">
       <div className="bottom__date">
         <p>
-          Date: 21-{month}-{day}
+          Date: {year}-{month}-{day}
         </p>
       </div>
       <div className="bottom__center">
