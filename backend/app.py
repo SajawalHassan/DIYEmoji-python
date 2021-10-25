@@ -1,5 +1,4 @@
-from os import name
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, Response
 from werkzeug.utils import secure_filename
 
 from db import db_init, db
@@ -12,7 +11,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
 
 db_init(app)
 
-@app.route('/')
+@app.route('/', methods=["GET"])
 def index():
     return 'Hello Wolrd'
 
@@ -33,6 +32,25 @@ def upload():
 
     return jsonify({ "msg":f"Image has been uploaded with the filename of {filename}" }), 200
 
+
+@app.route('/api/photos/<int:id>', methods=["GET"])
+def get_image(id):
+    img = Img.query.filter_by(id=id).first()
+
+    if not img:
+        return jsonify({ "msg":"No img found" }), 404
+
+    return Response(img.img, mimetype=img.mimetype)
+
+
+@app.route('/api/photos/<int:id>', methods=["DELETE"])
+def delete_image(id):
+    img = Img.query.filter_by(id=id).delete()
+
+    if not img:
+        return jsonify({ "msg":"No img found to delete" }), 404
+
+    return jsonify({ "msg": "Image Deleted" }), 200
 
 
 if __name__ == "__main__":
