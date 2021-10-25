@@ -2,7 +2,8 @@
   padding: 30px 5px;
 }
 
-.main__header {
+/* ADD WHEN HAVE AUTH */
+/* .main__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +33,7 @@
 
 .main__header > .main__headerRight > button:hover {
   background-color: rgb(34, 139, 158);
-}
+} */
 
 .main__body {
   display: flex;
