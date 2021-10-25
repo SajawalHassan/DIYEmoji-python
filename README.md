@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/SajawalHassan/volume_gesture_control_python">
+  <a href="https://github.com/ShahabAthar25/DIYEmoji-python">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -11,9 +11,9 @@
   <p align="center">
     A website to put YOUR filters onto your face
     <br />
-    <a href="https://github.com/SajawalHassan/volume_gesture_control_python/issues">Report Bug</a>
+    <a href="https://github.com/ShahabAthar25/DIYEmoji-python/issues">Report Bug</a>
     ·
-    <a href="https://github.com/SajawalHassan/volume_gesture_control_python/issues">Request Feature</a>
+    <a href="https://github.com/ShahabAthar25/DIYEmoji-python/issues">Request Feature</a>
   </p>
 </div>
 
